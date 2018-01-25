@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A3DFC6415B2250A80F9E905 /* libPods-LZBLinkageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FB53C88A1BBFD9C690598F /* libPods-LZBLinkageView.a */; };
+		C8396EF62018723E00F77CFE /* ZBCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8396EF52018723E00F77CFE /* ZBCollectionReusableView.m */; };
+		C8396EF92018747800F77CFE /* ZBCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8396EF82018747800F77CFE /* ZBCollectionViewCell.m */; };
+		C8396EFC2018759000F77CFE /* ZBCollectionCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8396EFB2018759000F77CFE /* ZBCollectionCategoryModel.m */; };
+		C863015620171CDE0062FB33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C863015520171CDE0062FB33 /* AppDelegate.m */; };
+		C863015920171CDE0062FB33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C863015820171CDE0062FB33 /* ViewController.m */; };
+		C863015C20171CDE0062FB33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C863015A20171CDE0062FB33 /* Main.storyboard */; };
+		C863015E20171CDE0062FB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C863015D20171CDE0062FB33 /* Assets.xcassets */; };
+		C863016120171CDE0062FB33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C863015F20171CDE0062FB33 /* LaunchScreen.storyboard */; };
+		C863016420171CDE0062FB33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C863016320171CDE0062FB33 /* main.m */; };
+		C863017020171F890062FB33 /* UIViewController+Dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = C863016F20171F890062FB33 /* UIViewController+Dealloc.m */; };
+		C8630173201726230062FB33 /* ZBLeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8630172201726230062FB33 /* ZBLeftTableViewCell.m */; };
+		C8630176201726300062FB33 /* ZBRightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C8630175201726300062FB33 /* ZBRightTableViewCell.m */; };
+		C863017920172D910062FB33 /* ZBTabbleViewLinkageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C863017820172D910062FB33 /* ZBTabbleViewLinkageVC.m */; };
+		C863017C201730E70062FB33 /* meituan.json in Resources */ = {isa = PBXBuildFile; fileRef = C863017A201730E70062FB33 /* meituan.json */; };
+		C863017D201730E70062FB33 /* liwushuo.json in Resources */ = {isa = PBXBuildFile; fileRef = C863017B201730E70062FB33 /* liwushuo.json */; };
+		C8630180201731D40062FB33 /* ZBCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C863017F201731D40062FB33 /* ZBCategoryModel.m */; };
+		C8630183201732260062FB33 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = C8630182201732260062FB33 /* NSObject+Property.m */; };
+		C863018D201866D60062FB33 /* ZBCollectionViewLinkageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C863018C201866D60062FB33 /* ZBCollectionViewLinkageVC.m */; };
+		C863019020186D350062FB33 /* ZBCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C863018F20186D350062FB33 /* ZBCollectionViewFlowLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		637B84541FFDF00DAE92D4E5 /* Pods-LZBLinkageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBLinkageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LZBLinkageView/Pods-LZBLinkageView.release.xcconfig"; sourceTree = "<group>"; };
+		65E977F1D1872155730610D5 /* Pods-LZBLinkageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZBLinkageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LZBLinkageView/Pods-LZBLinkageView.debug.xcconfig"; sourceTree = "<group>"; };
+		91FB53C88A1BBFD9C690598F /* libPods-LZBLinkageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LZBLinkageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8396EF42018723E00F77CFE /* ZBCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCollectionReusableView.h; sourceTree = "<group>"; };
+		C8396EF52018723E00F77CFE /* ZBCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCollectionReusableView.m; sourceTree = "<group>"; };
+		C8396EF72018747800F77CFE /* ZBCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCollectionViewCell.h; sourceTree = "<group>"; };
+		C8396EF82018747800F77CFE /* ZBCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCollectionViewCell.m; sourceTree = "<group>"; };
+		C8396EFA2018759000F77CFE /* ZBCollectionCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCollectionCategoryModel.h; sourceTree = "<group>"; };
+		C8396EFB2018759000F77CFE /* ZBCollectionCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCollectionCategoryModel.m; sourceTree = "<group>"; };
+		C863015120171CDE0062FB33 /* LZBLinkageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZBLinkageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C863015420171CDE0062FB33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C863015520171CDE0062FB33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C863015720171CDE0062FB33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C863015820171CDE0062FB33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C863015B20171CDE0062FB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C863015D20171CDE0062FB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C863016020171CDE0062FB33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C863016220171CDE0062FB33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C863016320171CDE0062FB33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C863016E20171F890062FB33 /* UIViewController+Dealloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Dealloc.h"; sourceTree = "<group>"; };
+		C863016F20171F890062FB33 /* UIViewController+Dealloc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Dealloc.m"; sourceTree = "<group>"; };
+		C8630171201726230062FB33 /* ZBLeftTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBLeftTableViewCell.h; sourceTree = "<group>"; };
+		C8630172201726230062FB33 /* ZBLeftTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBLeftTableViewCell.m; sourceTree = "<group>"; };
+		C8630174201726300062FB33 /* ZBRightTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBRightTableViewCell.h; sourceTree = "<group>"; };
+		C8630175201726300062FB33 /* ZBRightTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBRightTableViewCell.m; sourceTree = "<group>"; };
+		C863017720172D910062FB33 /* ZBTabbleViewLinkageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBTabbleViewLinkageVC.h; sourceTree = "<group>"; };
+		C863017820172D910062FB33 /* ZBTabbleViewLinkageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBTabbleViewLinkageVC.m; sourceTree = "<group>"; };
+		C863017A201730E70062FB33 /* meituan.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = meituan.json; sourceTree = "<group>"; };
+		C863017B201730E70062FB33 /* liwushuo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = liwushuo.json; sourceTree = "<group>"; };
+		C863017E201731D40062FB33 /* ZBCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCategoryModel.h; sourceTree = "<group>"; };
+		C863017F201731D40062FB33 /* ZBCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCategoryModel.m; sourceTree = "<group>"; };
+		C8630181201732260062FB33 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		C8630182201732260062FB33 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		C863018B201866D60062FB33 /* ZBCollectionViewLinkageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCollectionViewLinkageVC.h; sourceTree = "<group>"; };
+		C863018C201866D60062FB33 /* ZBCollectionViewLinkageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCollectionViewLinkageVC.m; sourceTree = "<group>"; };
+		C863018E20186D350062FB33 /* ZBCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		C863018F20186D350062FB33 /* ZBCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C863014E20171CDE0062FB33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3DFC6415B2250A80F9E905 /* libPods-LZBLinkageView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3512AAD4A6ECB6DC3FB6EE73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65E977F1D1872155730610D5 /* Pods-LZBLinkageView.debug.xcconfig */,
+				637B84541FFDF00DAE92D4E5 /* Pods-LZBLinkageView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5218C649B883FAF67BAF5DE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91FB53C88A1BBFD9C690598F /* libPods-LZBLinkageView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C863014820171CDE0062FB33 = {
+			isa = PBXGroup;
+			children = (
+				C863015320171CDE0062FB33 /* LZBLinkageView */,
+				C863015220171CDE0062FB33 /* Products */,
+				3512AAD4A6ECB6DC3FB6EE73 /* Pods */,
+				5218C649B883FAF67BAF5DE0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C863015220171CDE0062FB33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C863015120171CDE0062FB33 /* LZBLinkageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C863015320171CDE0062FB33 /* LZBLinkageView */ = {
+			isa = PBXGroup;
+			children = (
+				C863016A20171F4B0062FB33 /* LZBLinkageView */,
+				C863015420171CDE0062FB33 /* AppDelegate.h */,
+				C863015520171CDE0062FB33 /* AppDelegate.m */,
+				C863015720171CDE0062FB33 /* ViewController.h */,
+				C863015820171CDE0062FB33 /* ViewController.m */,
+				C863015A20171CDE0062FB33 /* Main.storyboard */,
+				C863015D20171CDE0062FB33 /* Assets.xcassets */,
+				C863015F20171CDE0062FB33 /* LaunchScreen.storyboard */,
+				C863016220171CDE0062FB33 /* Info.plist */,
+				C863016320171CDE0062FB33 /* main.m */,
+				C863017B201730E70062FB33 /* liwushuo.json */,
+				C863017A201730E70062FB33 /* meituan.json */,
+			);
+			path = LZBLinkageView;
+			sourceTree = "<group>";
+		};
+		C863016A20171F4B0062FB33 /* LZBLinkageView */ = {
+			isa = PBXGroup;
+			children = (
+				C863016B20171F4B0062FB33 /* CollectionView */,
+				C863016C20171F4B0062FB33 /* TableView */,
+				C863016D20171F4B0062FB33 /* Tool */,
+			);
+			path = LZBLinkageView;
+			sourceTree = "<group>";
+		};
+		C863016B20171F4B0062FB33 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C863018B201866D60062FB33 /* ZBCollectionViewLinkageVC.h */,
+				C863018C201866D60062FB33 /* ZBCollectionViewLinkageVC.m */,
+				C863018E20186D350062FB33 /* ZBCollectionViewFlowLayout.h */,
+				C863018F20186D350062FB33 /* ZBCollectionViewFlowLayout.m */,
+				C8396EF42018723E00F77CFE /* ZBCollectionReusableView.h */,
+				C8396EF52018723E00F77CFE /* ZBCollectionReusableView.m */,
+				C8396EF72018747800F77CFE /* ZBCollectionViewCell.h */,
+				C8396EF82018747800F77CFE /* ZBCollectionViewCell.m */,
+				C8396EFA2018759000F77CFE /* ZBCollectionCategoryModel.h */,
+				C8396EFB2018759000F77CFE /* ZBCollectionCategoryModel.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		C863016C20171F4B0062FB33 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				C863017720172D910062FB33 /* ZBTabbleViewLinkageVC.h */,
+				C863017820172D910062FB33 /* ZBTabbleViewLinkageVC.m */,
+				C8630171201726230062FB33 /* ZBLeftTableViewCell.h */,
+				C8630172201726230062FB33 /* ZBLeftTableViewCell.m */,
+				C8630174201726300062FB33 /* ZBRightTableViewCell.h */,
+				C8630175201726300062FB33 /* ZBRightTableViewCell.m */,
+				C863017E201731D40062FB33 /* ZBCategoryModel.h */,
+				C863017F201731D40062FB33 /* ZBCategoryModel.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		C863016D20171F4B0062FB33 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C8630181201732260062FB33 /* NSObject+Property.h */,
+				C8630182201732260062FB33 /* NSObject+Property.m */,
+				C863016E20171F890062FB33 /* UIViewController+Dealloc.h */,
+				C863016F20171F890062FB33 /* UIViewController+Dealloc.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C863015020171CDE0062FB33 /* LZBLinkageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C863016720171CDE0062FB33 /* Build configuration list for PBXNativeTarget "LZBLinkageView" */;
+			buildPhases = (
+				01AFED028DC01BE87703F339 /* [CP] Check Pods Manifest.lock */,
+				C863014D20171CDE0062FB33 /* Sources */,
+				C863014E20171CDE0062FB33 /* Frameworks */,
+				C863014F20171CDE0062FB33 /* Resources */,
+				C496BE740A7C497DE6647D53 /* [CP] Embed Pods Frameworks */,
+				C460896E9CE46546F8CB32CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZBLinkageView;
+			productName = LZBLinkageView;
+			productReference = C863015120171CDE0062FB33 /* LZBLinkageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C863014920171CDE0062FB33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					C863015020171CDE0062FB33 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C863014C20171CDE0062FB33 /* Build configuration list for PBXProject "LZBLinkageView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C863014820171CDE0062FB33;
+			productRefGroup = C863015220171CDE0062FB33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C863015020171CDE0062FB33 /* LZBLinkageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C863014F20171CDE0062FB33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C863016120171CDE0062FB33 /* LaunchScreen.storyboard in Resources */,
+				C863017D201730E70062FB33 /* liwushuo.json in Resources */,
+				C863015E20171CDE0062FB33 /* Assets.xcassets in Resources */,
+				C863015C20171CDE0062FB33 /* Main.storyboard in Resources */,
+				C863017C201730E70062FB33 /* meituan.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AFED028DC01BE87703F339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LZBLinkageView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C460896E9CE46546F8CB32CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZBLinkageView/Pods-LZBLinkageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C496BE740A7C497DE6647D53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LZBLinkageView/Pods-LZBLinkageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C863014D20171CDE0062FB33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C863019020186D350062FB33 /* ZBCollectionViewFlowLayout.m in Sources */,
+				C8630173201726230062FB33 /* ZBLeftTableViewCell.m in Sources */,
+				C863015920171CDE0062FB33 /* ViewController.m in Sources */,
+				C863017920172D910062FB33 /* ZBTabbleViewLinkageVC.m in Sources */,
+				C8630176201726300062FB33 /* ZBRightTableViewCell.m in Sources */,
+				C8396EFC2018759000F77CFE /* ZBCollectionCategoryModel.m in Sources */,
+				C8396EF92018747800F77CFE /* ZBCollectionViewCell.m in Sources */,
+				C8630183201732260062FB33 /* NSObject+Property.m in Sources */,
+				C863017020171F890062FB33 /* UIViewController+Dealloc.m in Sources */,
+				C863016420171CDE0062FB33 /* main.m in Sources */,
+				C863018D201866D60062FB33 /* ZBCollectionViewLinkageVC.m in Sources */,
+				C863015620171CDE0062FB33 /* AppDelegate.m in Sources */,
+				C8630180201731D40062FB33 /* ZBCategoryModel.m in Sources */,
+				C8396EF62018723E00F77CFE /* ZBCollectionReusableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C863015A20171CDE0062FB33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C863015B20171CDE0062FB33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C863015F20171CDE0062FB33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C863016020171CDE0062FB33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C863016520171CDE0062FB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C863016620171CDE0062FB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C863016820171CDE0062FB33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E977F1D1872155730610D5 /* Pods-LZBLinkageView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LZBLinkageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzbwechat.lzbcoder.LZBLinkageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C863016920171CDE0062FB33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637B84541FFDF00DAE92D4E5 /* Pods-LZBLinkageView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LZBLinkageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzbwechat.lzbcoder.LZBLinkageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C863014C20171CDE0062FB33 /* Build configuration list for PBXProject "LZBLinkageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C863016520171CDE0062FB33 /* Debug */,
+				C863016620171CDE0062FB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C863016720171CDE0062FB33 /* Build configuration list for PBXNativeTarget "LZBLinkageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C863016820171CDE0062FB33 /* Debug */,
+				C863016920171CDE0062FB33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C863014920171CDE0062FB33 /* Project object */;
+}

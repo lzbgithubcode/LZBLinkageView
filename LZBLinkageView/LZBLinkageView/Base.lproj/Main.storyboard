@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Bat-Vd-PF9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jnN-jR-4Pt">
+            <objects>
+                <navigationController id="Bat-Vd-PF9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rDq-Xr-bzL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fNa-0l-YDp" kind="relationship" relationship="rootViewController" id="buk-Cx-Rqy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rq-RN-mf5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1430" y="-47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OPy-r1-SJ8">
+            <objects>
+                <viewController id="fNa-0l-YDp" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e2a-xE-svZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xe0-6E-s3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZJP-hL-JMt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-Qe-L9F">
+                                <rect key="frame" x="60" y="124" width="255" height="34"/>
+                                <state key="normal" title="点击查看TabbleView联动">
+                                    <color key="titleColor" red="0.227463266" green="0.75096956250000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="tableViewLinkageAction:" destination="fNa-0l-YDp" eventType="touchUpInside" id="WZp-Lc-a0l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfJ-x2-REC">
+                                <rect key="frame" x="60" y="218" width="255" height="34"/>
+                                <state key="normal" title="点击查看CollectionView联动">
+                                    <color key="titleColor" red="0.227463266" green="0.75096956250000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="collectionViewLinkageAction:" destination="fNa-0l-YDp" eventType="touchUpInside" id="hKI-MF-72a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QfJ-x2-REC" firstAttribute="top" secondItem="nJ0-Qe-L9F" secondAttribute="bottom" constant="60" id="3gO-cu-XcH"/>
+                            <constraint firstItem="QfJ-x2-REC" firstAttribute="centerX" secondItem="ZJP-hL-JMt" secondAttribute="centerX" id="JKL-bZ-yeS"/>
+                            <constraint firstItem="nJ0-Qe-L9F" firstAttribute="centerX" secondItem="ZJP-hL-JMt" secondAttribute="centerX" id="OqQ-mc-dgh"/>
+                            <constraint firstItem="nJ0-Qe-L9F" firstAttribute="leading" secondItem="ZJP-hL-JMt" secondAttribute="leading" constant="60" id="PqK-yJ-iBh"/>
+                            <constraint firstAttribute="trailing" secondItem="nJ0-Qe-L9F" secondAttribute="trailing" constant="60" id="U7l-Uy-Bce"/>
+                            <constraint firstItem="nJ0-Qe-L9F" firstAttribute="top" secondItem="e2a-xE-svZ" secondAttribute="bottom" constant="60" id="aNP-hH-uN6"/>
+                            <constraint firstItem="QfJ-x2-REC" firstAttribute="leading" secondItem="ZJP-hL-JMt" secondAttribute="leading" constant="60" id="dn5-qH-hXr"/>
+                            <constraint firstAttribute="trailing" secondItem="QfJ-x2-REC" secondAttribute="trailing" constant="60" id="gkI-om-rey"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JuY-BB-eBP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9Z-ed-Shr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-466.39999999999998" y="9.4452773613193415"/>
+        </scene>
+    </scenes>
+</document>
