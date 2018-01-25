@@ -30,6 +30,10 @@ static float kLeftTableViewWidth = 100.f;
 @property (nonatomic, strong) NSMutableArray <ZBCollectionCategoryModel *>*categoryList;
 @property (nonatomic, strong) NSMutableArray <ZBSubCategoryModel *>*goodsList;
 
+//滚动向下
+@property (nonatomic, assign) BOOL isRightScrollDericetionDown;
+
+
 @end
 
 @implementation ZBCollectionViewLinkageVC
@@ -42,6 +46,7 @@ static float kLeftTableViewWidth = 100.f;
     } else {
         self.automaticallyAdjustsScrollViewInsets = NO;
     }
+    self.isRightScrollDericetionDown = NO;
     [self.view addSubview:self.leftTableView];
     [self.view addSubview:self.rightCollectionView];
     [self leftScrollToIndexPath:0];
@@ -126,6 +131,39 @@ static float kLeftTableViewWidth = 100.f;
     [self leftScrollToIndexPath:indexPath.row];
 }
 
+
+//右边头部即将显示的时候 - 向上方向
+-(void)collectionView:(UICollectionView *)collectionView willDisplaySupplementaryView:(nonnull UICollectionReusableView *)view forElementKind:(nonnull NSString *)elementKind atIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    
+    //左边滚动
+    if(!self.isRightScrollDericetionDown && (collectionView.dragging ||collectionView.decelerating)){
+        NSInteger section = indexPath.section;
+        [self leftScrollToIndexPath:section];
+    }
+}
+
+//右边头部显示结束的时候 - 向下方向
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingSupplementaryView:(nonnull UICollectionReusableView *)view forElementOfKind:(nonnull NSString *)elementKind atIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    //左边滚动
+    if(self.isRightScrollDericetionDown && (collectionView.dragging ||collectionView.decelerating)){
+        NSInteger section = indexPath.section;
+        [self leftScrollToIndexPath:section - 1];
+    }
+}
+
+//滚动判断方向
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    //如果是右边的collectionView  就判断方向
+    static CGFloat lastOffsetY = 0;
+    if(scrollView == self.rightCollectionView){
+        self.isRightScrollDericetionDown = self.rightCollectionView.contentOffset.y < lastOffsetY;
+        lastOffsetY =  self.rightCollectionView.contentOffset.y;
+    }
+}
+
 //右边滚动到指定位置
 - (void)rightScrollToSectionTopIndex:(NSInteger)index
 {
@@ -157,7 +195,7 @@ static float kLeftTableViewWidth = 100.f;
 - (UITableView *)leftTableView
 {
     if(_leftTableView == nil){
-        _leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, ZB_NAVI_HEIGHT, kLeftTableViewWidth, ZB_SCREEN_HEIGHT)];
+        _leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, ZB_NAVI_HEIGHT, kLeftTableViewWidth, ZB_SCREEN_HEIGHT-ZB_NAVI_HEIGHT)];
         _leftTableView.delegate = self;
         _leftTableView.dataSource = self;
         _leftTableView.rowHeight = [ZBLeftTableViewCell getLeftTableViewCellHeight];
@@ -187,7 +225,7 @@ static float kLeftTableViewWidth = 100.f;
         flowLayout.minimumInteritemSpacing = 15;
         flowLayout.minimumLineSpacing = 10;
         
-        _rightCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(kLeftTableViewWidth, ZB_NAVI_HEIGHT,ZB_SCREEN_WIDTH-kLeftTableViewWidth, ZB_SCREEN_HEIGHT) collectionViewLayout:flowLayout];
+        _rightCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(kLeftTableViewWidth, ZB_NAVI_HEIGHT,ZB_SCREEN_WIDTH-kLeftTableViewWidth, ZB_SCREEN_HEIGHT-ZB_NAVI_HEIGHT) collectionViewLayout:flowLayout];
         _rightCollectionView.delegate = self;
         _rightCollectionView.dataSource = self;
         _rightCollectionView.showsVerticalScrollIndicator = NO;
